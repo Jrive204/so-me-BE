@@ -51,7 +51,9 @@ const schema = Joi.object({
 
 router.get('/:id/oauth', validateuserid, restricted, async (req, res, next) => {
   try {
-    let twit = await client.getRequestToken('https://www.so-me.net/callback ');
+    let twit = await client.getRequestToken(
+      'https://some.vercel.app/callback '
+    );
     // https://master.duosa5dkjv93b.amplifyapp.com/callback     <-- if so-me in not fixed
 
     const redirecturl = `https://api.twitter.com/oauth/authorize?oauth_token=${twit.oauth_token}`;
@@ -62,7 +64,8 @@ router.get('/:id/oauth', validateuserid, restricted, async (req, res, next) => {
   }
 });
 
-router.post('/:id/callback', restricted, async (req, res, next) => { //Remember we restricted this
+router.post('/:id/callback', restricted, async (req, res, next) => {
+  //Remember we restricted this
   const { okta_userid } = req.decodedToken;
 
   try {
@@ -90,7 +93,6 @@ router.post('/:id/callback', restricted, async (req, res, next) => { //Remember 
         },
       }
     );
-  
 
     var T = new Twit({
       consumer_key: process.env.CONSUMER_KEY,
@@ -282,7 +284,6 @@ router.get('/userInfo', restricted, twitterInfo, async (req, res) => {
     let twitInfo = await req.twit.get('users/show', {
       screen_name: `${req.okta.data.profile.twitter_screenName}`,
     });
-
 
     res.status(200).json({
       screen_name: req.okta.data.profile.twitter_screenName,
