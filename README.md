@@ -91,7 +91,7 @@ Store as: localStorage.setItem('token', res.data.token)
 
 ```
 {
-"email": "test@test.com"
+"email": "test1@test.com"
 "password": "test"
 }
 ```
