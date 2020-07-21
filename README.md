@@ -2,8 +2,6 @@
 
 # API Documentation
 
-#### Backend deployed at [AWS](https://api.so-me.net) <br>
-
 ## Getting started
 
 To get the server running locally:
