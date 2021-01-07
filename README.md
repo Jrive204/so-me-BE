@@ -926,29 +926,29 @@ Located in `topics-model.js`
 
 ## Environment Variables
 
-JWT_SECRETS="zcasfdaffzxcvvrtydkldssadjfoiwuernpoiamfassdfasio"
+JWT_SECRETS
 <br>
-NODE_ENV='development'
+NODE_ENV
 <br>
-EMAIL_TEST='test@test.com'
+EMAIL_TEST
 <br>
-PASSWORD_TEST='test'
+PASSWORD_TEST
 <br>
-CONSUMER_KEY="qwxfZ7keDWO6vTlqxr7ZFCxzC"
+CONSUMER_KEY
 <br>
-CONSUMER_SECRET="jtMjwQu2UPztxIbjnEdBVglgJK47cAhJ9bmLpXFD86fhjC3fqa"
+CONSUMER_SECRET
 <br>
-OKTA_AUTH="SSWS007i8tncM4Z-bN6fiP6fvu0AbKS-tvql3lFtxy-6vd"
+OKTA_AUTH
 <br>
-OKTA_DOMAIN=dev-966011.okta.com/api/v1
+OKTA_DOMAIN
 <br>
-DB_USER="jrivera6869"
+DB_USER
 <br>
-DB_PW="postgres"
+DB_PW
 <br>
-DB_DB="ebdb"
+DB_DB
 <br>
-DB_HOST="aa1xxezbq1ezyd0.cst1ktu0kueb.us-east-1.rds.amazonaws.com"
+DB_HOST
 <br>
 
 ## Contributing
